@@ -162,7 +162,7 @@ local function OWEKC_fake_script() -- babftMinerAuto.LocalScript
 	local Button = script.Parent
 	
 	local function onButtonActivated()
-		--loadstring()
+		--loadstring(game:HttpGet())()
 	end
 	
 	Button.Activated:Connect(onButtonActivated)
@@ -174,7 +174,7 @@ local function PBALZNL_fake_script() -- Deleter.LocalScript
 	local Button = script.Parent
 	
 	local function onButtonActivated()
-		loadstring("https://raw.githubusercontent.com/GreatTomato/PartDeleter_Roblox/main/main.lua")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GreatTomato/PartDeleter_Roblox/main/main.lua"))()
 	end
 	
 	Button.Activated:Connect(onButtonActivated)
