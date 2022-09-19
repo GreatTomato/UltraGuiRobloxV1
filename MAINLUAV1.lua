@@ -87,13 +87,13 @@ babftMinerAuto.Text = "AutoloadScripts"
 babftMinerAuto.TextColor3 = Color3.fromRGB(0, 0, 0)
 babftMinerAuto.TextSize = 14.000
 
-AnomaliesShower.Name = "AnomaliesShower"
+AnomaliesShower.Name = "Deleter"
 AnomaliesShower.Parent = ScrollingFrame
 AnomaliesShower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AnomaliesShower.Position = UDim2.new(0, 20, 0, 110)
 AnomaliesShower.Size = UDim2.new(0, 302, 0, 40)
 AnomaliesShower.Font = Enum.Font.SourceSans
-AnomaliesShower.Text = "AutoloadScripts"
+AnomaliesShower.Text = "Deleter"
 AnomaliesShower.TextColor3 = Color3.fromRGB(0, 0, 0)
 AnomaliesShower.TextSize = 14.000
 
@@ -162,19 +162,19 @@ local function OWEKC_fake_script() -- babftMinerAuto.LocalScript
 	local Button = script.Parent
 	
 	local function onButtonActivated()
-		print("SimpleText")
+		--loadstring()
 	end
 	
 	Button.Activated:Connect(onButtonActivated)
 end
 coroutine.wrap(OWEKC_fake_script)()
-local function PBALZNL_fake_script() -- AnomaliesShower.LocalScript 
-	local script = Instance.new('LocalScript', AnomaliesShower)
+local function PBALZNL_fake_script() -- Deleter.LocalScript 
+	local script = Instance.new('LocalScript', Deleter)
 
 	local Button = script.Parent
 	
 	local function onButtonActivated()
-		print("SimpleText")
+		loadstring("https://raw.githubusercontent.com/GreatTomato/PartDeleter_Roblox/main/main.lua")
 	end
 	
 	Button.Activated:Connect(onButtonActivated)
